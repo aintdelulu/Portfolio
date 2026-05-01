@@ -15,7 +15,7 @@ export function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
     try {
-      const response = await fetch("https://formsubmit.co/ajax/edgarcarandang18@gmail.com", {
+      const response = await fetch("https://formspree.io/f/xjglvjgo", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -66,6 +66,7 @@ export function Contact() {
                 <input
                   type="text"
                   id="name"
+                  name="name"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   required
@@ -81,6 +82,7 @@ export function Contact() {
                 <input
                   type="email"
                   id="email"
+                  name="email"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   required
@@ -95,6 +97,7 @@ export function Contact() {
                 </label>
                 <textarea
                   id="message"
+                  name="message"
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   required
