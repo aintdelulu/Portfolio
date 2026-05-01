@@ -61,7 +61,7 @@ export function Footer() {
 
         <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
           <p className="flex items-center justify-center gap-2">
-            Made with <Heart className="w-4 h-4 text-red-500 fill-current" /> by Edgar Carandang © 2026
+            All rights reserved by Edgar Carandang © 2026
           </p>
         </div>
       </div>

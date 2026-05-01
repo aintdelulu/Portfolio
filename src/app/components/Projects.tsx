@@ -180,7 +180,7 @@ export function Projects() {
       {
         title: "OS Deployment & Integration",
         description: "Experienced in deploying and configuring operating systems including Windows 10/11 and Linux distros. Managed OS installations, driver updates, and system configuration for multiple machines.",
-        tech: ["Windows 10/11", "Linux/Ubuntu", "OS Installation", "System Config"],
+        tech: ["Windows", "OS Installation", "System Config"],
         github: "",
         live: "",
         category: "IT Support"

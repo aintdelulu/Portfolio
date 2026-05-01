@@ -5,12 +5,12 @@ export function Skills() {
     {
       category: "Operating Systems",
       color: "text-blue-400",
-      skills: ["Windows 10/11", "Windows Server", "Linux/Ubuntu", "macOS", "OS Installation", "System Configuration"]
+      skills: ["Windows", "OS Installation", "System Configuration"]
     },
     {
       category: "Hardware & IT Support",
       color: "text-emerald-400",
-      skills: ["Hardware Diagnostics", "Component Replacement", "RAM/SSD Upgrades", "Peripheral Setup", "Cable Management", "Network Troubleshooting"]
+      skills: ["Hardware Diagnostics", "Component Replacement", "RAM/SSD Upgrades", "Cable Management"]
     },
     {
       category: "Web Development",
@@ -20,17 +20,17 @@ export function Skills() {
     {
       category: "Mobile Development",
       color: "text-pink-400",
-      skills: ["Flutter", "Dart", "Cross-Platform Apps", "Mobile UI Design", "State Management", "API Integration"]
+      skills: ["Flutter", "Dart", "Cross-Platform Apps", "Mobile UI Design", "API Integration"]
     },
     {
       category: "Tools & Software",
       color: "text-orange-400",
-      skills: ["Git & GitHub", "VS Code", "Active Directory", "Remote Desktop", "Ticketing Systems", "Backup Solutions"]
+      skills: ["Git & GitHub", "VS Code", "Remote Desktop", "Ticketing Systems", "Backup Solutions"]
     },
     {
       category: "Soft Skills",
       color: "text-cyan-400",
-      skills: ["Problem Solving", "Customer Support", "Documentation", "Team Collaboration", "Time Management", "User Training"]
+      skills: ["Problem Solving", "Empathy", "Team Collaboration", "Time Management", "Hardworking"]
     }
   ];
 
