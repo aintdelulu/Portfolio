@@ -28,7 +28,7 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              IT Support Specialist & Software Engineer
+              FRESH GRADUATE
             </motion.p>
 
             <motion.p
@@ -37,9 +37,9 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              Passionate about solving technical problems and building software solutions.
-              Skilled in hardware troubleshooting, OS integration, and developing real-world
-              applications using React, Flutter, and TypeScript.
+              Passionate about solving technical issues and developing efficient software solutions.
+              Experienced in IT support, including hardware troubleshooting, system maintenance, and OS integration, alongside building real-world applications using React, Flutter, and TypeScript.
+              Adept at bridging technical support and software development to deliver reliable, user-focused systems.
             </motion.p>
 
             <motion.div
@@ -103,13 +103,13 @@ export function Hero() {
             <div className="relative w-full aspect-[3/4] md:aspect-square group">
               {/* Subtle ambient glow behind the image */}
               <div className="absolute inset-0 bg-blue-500/20 blur-3xl rounded-full group-hover:bg-blue-500/30 transition-colors duration-500" />
-              
+
               {/* Image Container with masking to hide the studio background edges */}
               <div className="relative w-full h-full rounded-[2rem] md:rounded-full overflow-hidden border border-gray-800 shadow-2xl bg-gray-900 group-hover:border-gray-600 transition-colors duration-500">
-                <img 
-                  src="/edgar-profile-nobg.png" 
-                  alt="Edgar Carandang" 
-                  className="w-full h-full object-cover object-top scale-110 translate-y-4" 
+                <img
+                  src="/edgar-profile-nobg.png"
+                  alt="Edgar Carandang"
+                  className="w-full h-full object-cover object-top scale-110 translate-y-4"
                   onError={(e) => {
                     // Fallback to original if the nobg image isn't perfect
                     (e.target as HTMLImageElement).src = "/edgar-profile.png";
