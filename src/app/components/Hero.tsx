@@ -127,7 +127,7 @@ export function Hero() {
                   }}
                 />
               </div>
-            </div>
+            </motion.div>
           </motion.div>
         </div>
       </div>
