@@ -228,7 +228,7 @@ export function Projects() {
             return (
               <motion.div
                 key={project.title}
-                className="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-gray-500 transition-all group flex flex-col"
+                className="group bg-white/5 backdrop-blur-sm rounded-3xl border border-white/10 overflow-hidden flex flex-col hover:border-blue-500/50 transition-all duration-500 hover:bg-white/10 shadow-2xl"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
@@ -297,7 +297,7 @@ export function Projects() {
                     {project.tech.map((tech) => (
                       <span
                         key={tech}
-                        className="px-3 py-1 bg-blue-500/10 text-blue-400 border border-blue-500/20 rounded-full text-sm"
+                        className="px-3 py-1 bg-white/5 text-blue-400 border border-white/10 rounded-full text-xs font-medium backdrop-blur-sm group-hover:border-blue-500/30 transition-colors"
                       >
                         {tech}
                       </span>
