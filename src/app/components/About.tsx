@@ -39,15 +39,11 @@ export function About() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-5xl mb-6 text-white">About Me</h2>
-          <p className="text-xl text-gray-300 mb-4 max-w-3xl">
-            I'm a driven IT Support Specialist and Software Engineer with solid fundamentals in
-            hardware troubleshooting, hardware replacement, and operating system integration.
-          </p>
-          <p className="text-lg text-gray-400 mb-16 max-w-3xl">
-            Beyond IT support, I build real-world software — from cross-platform mobile apps using
-            Flutter & Dart, to interactive web experiences with React, TypeScript, and Vite. I bring
-            both a technician's precision and a developer's creativity to every challenge.
+          <h2 className="text-5xl mb-6 text-white font-bold tracking-tight">About Me</h2>
+          <p className="text-xl text-gray-300 mb-16 max-w-4xl leading-relaxed">
+            A highly motivated fresh graduate with a solid foundation in hardware troubleshooting, system maintenance, and operating system integration. Skilled in identifying and resolving technical issues efficiently with a structured and detail-oriented approach.
+            <br /><br />
+            In addition to IT support, I build practical software solutions, including cross-platform mobile applications using Flutter and Dart, and dynamic web applications with React, TypeScript, and Vite. I bring both technical precision and innovative thinking to every project.
           </p>
         </motion.div>
 
@@ -55,15 +51,16 @@ export function About() {
           {features.map((feature, index) => (
             <motion.div
               key={feature.title}
-              className="bg-gray-800 p-8 rounded-xl border border-gray-700 hover:border-blue-500/50 transition-all hover:bg-gray-800/80"
+              className="relative group bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10 hover:border-blue-500/50 transition-all duration-500 hover:bg-white/10 shadow-xl"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <feature.icon className="w-12 h-12 text-blue-500 mb-4" />
-              <h3 className="text-2xl mb-3 text-white">{feature.title}</h3>
-              <p className="text-gray-400">{feature.description}</p>
+              <div className="absolute inset-0 bg-blue-500/5 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl" />
+              <feature.icon className="relative w-12 h-12 text-blue-500 mb-6 group-hover:scale-110 transition-transform duration-500" />
+              <h3 className="relative text-2xl mb-3 text-white font-semibold">{feature.title}</h3>
+              <p className="relative text-gray-400 leading-relaxed">{feature.description}</p>
             </motion.div>
           ))}
         </div>

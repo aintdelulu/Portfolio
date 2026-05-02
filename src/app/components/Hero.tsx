@@ -14,12 +14,12 @@ export function Hero() {
             transition={{ duration: 0.8 }}
           >
             <motion.h1
-              className="text-5xl md:text-7xl lg:text-8xl mb-6 text-white"
+              className="text-5xl md:text-7xl lg:text-8xl mb-6 text-white font-bold tracking-tight"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              Hi, I'm <span className="text-blue-500">Edgar Carandang</span>
+              Hi, I'm <span className="bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-600 bg-clip-text text-transparent">Edgar Carandang</span>
             </motion.h1>
 
             <motion.p
@@ -100,7 +100,17 @@ export function Hero() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <div className="relative w-full aspect-[3/4] md:aspect-square group">
+            <motion.div 
+              animate={{ 
+                y: [0, -15, 0],
+              }}
+              transition={{ 
+                duration: 6, 
+                repeat: Infinity, 
+                ease: "easeInOut" 
+              }}
+              className="relative w-full aspect-[3/4] md:aspect-square group"
+            >
               {/* Subtle ambient glow behind the image */}
               <div className="absolute inset-0 bg-blue-500/20 blur-3xl rounded-full group-hover:bg-blue-500/30 transition-colors duration-500" />
 

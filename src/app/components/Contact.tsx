@@ -70,7 +70,7 @@ export function Contact() {
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   required
-                  className="w-full px-4 py-3 bg-gray-800 border border-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-4 py-4 bg-white/5 border border-white/10 text-white rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500/50 transition-all backdrop-blur-sm placeholder:text-gray-500"
                   placeholder="Your name"
                 />
               </div>
@@ -86,7 +86,7 @@ export function Contact() {
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   required
-                  className="w-full px-4 py-3 bg-gray-800 border border-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-4 py-4 bg-white/5 border border-white/10 text-white rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500/50 transition-all backdrop-blur-sm placeholder:text-gray-500"
                   placeholder="your.email@example.com"
                 />
               </div>
@@ -102,7 +102,7 @@ export function Contact() {
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   required
                   rows={6}
-                  className="w-full px-4 py-3 bg-gray-800 border border-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
+                  className="w-full px-4 py-4 bg-white/5 border border-white/10 text-white rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500/50 transition-all backdrop-blur-sm resize-none placeholder:text-gray-500"
                   placeholder="Tell me about your project..."
                 />
               </div>
@@ -110,7 +110,7 @@ export function Contact() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors disabled:opacity-50"
+                className="w-full px-8 py-4 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition-all shadow-lg shadow-blue-500/20 active:scale-[0.98] disabled:opacity-50"
               >
                 {isSubmitting ? "Sending..." : "Send Message"}
               </button>
@@ -124,34 +124,40 @@ export function Contact() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <div className="bg-gray-800 p-8 rounded-xl border border-gray-700">
-              <h3 className="text-2xl mb-6 text-white">Contact Information</h3>
-
-              <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <Mail className="w-6 h-6 text-blue-500 mt-1" />
+            <div className="bg-white/5 backdrop-blur-sm p-8 rounded-3xl border border-white/10 shadow-xl">
+              <h3 className="text-2xl mb-8 text-white font-bold tracking-tight">Contact Information</h3>
+              
+              <div className="space-y-8">
+                <div className="flex items-start gap-5">
+                  <div className="p-3 bg-blue-500/10 rounded-xl">
+                    <Mail className="w-6 h-6 text-blue-500" />
+                  </div>
                   <div>
-                    <div className="text-gray-400 mb-1">Email</div>
+                    <div className="text-sm text-gray-500 font-medium uppercase tracking-wider mb-1">Email</div>
                     <a href="mailto:edgarcarandang18@gmail.com" className="text-lg text-gray-300 hover:text-blue-500 transition-colors">
                       edgarcarandang18@gmail.com
                     </a>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <Phone className="w-6 h-6 text-blue-500 mt-1" />
+                <div className="flex items-start gap-5">
+                  <div className="p-3 bg-blue-500/10 rounded-xl">
+                    <Phone className="w-6 h-6 text-blue-500" />
+                  </div>
                   <div>
-                    <div className="text-gray-400 mb-1">Phone</div>
-                    <a href="tel:+1234567890" className="text-lg text-gray-300 hover:text-blue-500 transition-colors">
+                    <div className="text-sm text-gray-500 font-medium uppercase tracking-wider mb-1">Phone</div>
+                    <a href="tel:+639304334837" className="text-lg text-gray-300 hover:text-blue-500 transition-colors">
                       +63 (930) 433-4837
                     </a>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <MapPin className="w-6 h-6 text-blue-500 mt-1" />
+                <div className="flex items-start gap-5">
+                  <div className="p-3 bg-blue-500/10 rounded-xl">
+                    <MapPin className="w-6 h-6 text-blue-500" />
+                  </div>
                   <div>
-                    <div className="text-gray-400 mb-1">Location</div>
+                    <div className="text-sm text-gray-500 font-medium uppercase tracking-wider mb-1">Location</div>
                     <div className="text-lg text-gray-300">Batangas, Philippines</div>
                   </div>
                 </div>

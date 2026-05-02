@@ -53,23 +53,25 @@ export function Skills() {
           {skillCategories.map((category, categoryIndex) => (
             <motion.div
               key={category.category}
+              className="bg-white/[0.02] backdrop-blur-3xl p-8 rounded-3xl border border-white/5 hover:border-white/10 transition-colors duration-500"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: categoryIndex * 0.1 }}
               viewport={{ once: true }}
             >
-              <h3 className={`text-xl mb-5 ${category.color}`}>{category.category}</h3>
-              <div className="grid grid-cols-2 gap-3">
+              <h3 className={`text-xl font-bold mb-6 tracking-wide uppercase ${category.color}`}>{category.category}</h3>
+              <div className="flex flex-wrap gap-3">
                 {category.skills.map((skill, skillIndex) => (
                   <motion.div
                     key={skill}
-                    className="bg-gray-800 text-gray-300 px-4 py-3 rounded-lg border border-gray-700 hover:border-gray-500 transition-all text-sm"
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
+                    className="relative group bg-white/5 backdrop-blur-sm px-4 py-2.5 rounded-xl border border-white/10 hover:border-blue-500/40 transition-all duration-300 text-sm text-gray-300 hover:text-white"
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.4, delay: skillIndex * 0.05 }}
                     viewport={{ once: true }}
                   >
-                    {skill}
+                    <div className="absolute inset-0 bg-blue-500/5 blur opacity-0 group-hover:opacity-100 transition-opacity rounded-xl" />
+                    <span className="relative z-10">{skill}</span>
                   </motion.div>
                 ))}
               </div>
