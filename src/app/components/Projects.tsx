@@ -228,7 +228,7 @@ export function Projects() {
             return (
               <motion.div
                 key={project.title}
-                className="group bg-white/5 backdrop-blur-sm rounded-3xl border border-white/10 overflow-hidden flex flex-col hover:border-blue-500/50 transition-all duration-500 hover:bg-white/10 shadow-2xl"
+                className="group bg-gradient-to-br from-white/[0.07] to-transparent backdrop-blur-md rounded-3xl border border-white/10 overflow-hidden flex flex-col hover:border-blue-500/50 transition-all duration-500 hover:bg-white/[0.1] shadow-2xl"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}

@@ -51,7 +51,7 @@ export function About() {
           {features.map((feature, index) => (
             <motion.div
               key={feature.title}
-              className="relative group bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10 hover:border-blue-500/50 transition-all duration-500 hover:bg-white/10 shadow-xl"
+              className="relative group bg-gradient-to-br from-white/[0.07] to-transparent backdrop-blur-md p-8 rounded-3xl border border-white/10 hover:border-blue-500/50 transition-all duration-500 hover:bg-white/[0.1] shadow-2xl"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}

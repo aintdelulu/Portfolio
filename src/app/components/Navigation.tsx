@@ -25,7 +25,7 @@ export function Navigation() {
   return (
     <motion.nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-gray-900/95 backdrop-blur-sm border-b border-gray-800" : "bg-transparent"
+        isScrolled ? "bg-gray-950/80 backdrop-blur-md border-b border-white/5 py-3" : "bg-transparent py-6"
       }`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
@@ -49,7 +49,7 @@ export function Navigation() {
             ))}
             <a
               href="#contact"
-              className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+              className="px-6 py-2.5 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-xl font-bold shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40 hover:scale-105 transition-all"
             >
               Hire Me
             </a>
@@ -86,7 +86,7 @@ export function Navigation() {
             ))}
             <a
               href="#contact"
-              className="block mt-2 px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-center"
+              className="block mt-4 px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-xl font-bold text-center"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Hire Me

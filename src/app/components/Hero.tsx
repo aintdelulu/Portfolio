@@ -23,7 +23,7 @@ export function Hero() {
             </motion.h1>
 
             <motion.p
-              className="text-2xl md:text-3xl text-gray-300 mb-8"
+              className="text-lg md:text-xl font-bold tracking-[0.25em] bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent mb-6"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
@@ -50,13 +50,13 @@ export function Hero() {
             >
               <a
                 href="#contact"
-                className="px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+                className="px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-xl font-bold shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 hover:scale-[1.02] active:scale-[0.98] transition-all"
               >
                 Get In Touch
               </a>
               <a
                 href="#projects"
-                className="px-8 py-4 border border-gray-700 text-gray-300 rounded-lg hover:border-gray-600 hover:bg-gray-900 transition-colors"
+                className="px-8 py-4 border border-white/10 bg-white/5 backdrop-blur-sm text-gray-300 rounded-xl font-bold hover:bg-white/10 hover:border-white/20 transition-all"
               >
                 View My Work
               </a>
